@@ -53,7 +53,6 @@ app.get('/character/:name', (req, res) => {
 
 app.get('/character', (req, res) => {
     const { age } = req.query
-    
     let filtered = characters.filter(char => {
         return char.age > age
     })
